@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to Left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to Left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #e3e1eb;
+  text-shadow: 0 0 10px #050507;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #ca0d1c, #691b1b);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.titulo {
+  animation: mover 5s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f6b93b;
+}
+
+main {
+  margin: 2rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+#sobre-mi {
+  margin-top: 4rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+/* Estilos de los proyectos */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #f6b93b;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f6b93b;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #161515;
+}
+
+/* Estilos para pantallas pequeñas */
+
+@media only screen and (max-width: 767px) {
+      .container {
+      padding: 0 20px; /* Modifica el padding a 20px en pantallas pequeñas */
+      }
+      
+      header {
+      padding: 0.5rem 0; /* Reduce el padding del encabezado en pantallas pequeñas */
+      }
+      
+      nav ul {
+      float: none; /* Quita la propiedad float en pantallas pequeñas para que el menú se muestre verticalmente /
+      text-align: center; / Centra el texto en pantallas pequeñas /
+      margin-top: 1rem; / Agrega un margen superior al menú en pantallas pequeñas */
+      }
+      
+      nav ul li {
+      display: block; /* Cambia el display a block en pantallas pequeñas para que los elementos del menú se muestren verticalmente /
+      margin: 0.5rem 0; / Agrega un margen entre los elementos del menú en pantallas pequeñas */
+      }
+      
+      li {
+      padding: 1rem; /* Ajusta el padding en los proyectos en pantallas pequeñas */
+      }
+      }

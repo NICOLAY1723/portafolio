@@ -1,0 +1,42 @@
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #EFEFEF;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.conteudo img {
+    margin: auto;
+    width: 150px;
+    filter: drop-shadow(0px 0px 1px #4b4b50);
+    animation: flutuar 3s linear infinite;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+
+.conteudo img:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.conteudo img:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.conteudo img:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.conteudo img:nth-child(5) {
+    animation-delay: .8s;
+}
